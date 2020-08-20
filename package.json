@@ -1,0 +1,14 @@
+{
+  "name": "network-vulnerabilities",
+  "version": "0.0.1",
+  "description": "Retrieving vulnerabilities from Nist API",
+  "author": "ITProtect",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

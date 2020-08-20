@@ -1,0 +1,33 @@
+﻿.sidebar{
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  border: solid;
+  border-color: var(--main-font-color);
+  border-style: solid;
+}
+
+.sidebar > ul{
+  padding: .5rem;
+  position: absolute;
+  list-style: none;
+}
+
+.sidebar > ul > li{
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+/*all links*/
+.sidebar > ul > li > a, .sidebar > ul > li > button, .sidebar-dropdown{
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1099;
+}
+
+/*buttons dropdown*/
+.sidebar > ul > li > div{
+    padding: 0;
+    z-index: 1199;
+}
