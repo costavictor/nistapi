@@ -9,6 +9,8 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "axion": "^0.1.0",
+    "axios": "^0.20.0",
     "express": "^4.17.1"
   }
 }

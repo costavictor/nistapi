@@ -11,9 +11,4 @@ routes(app);
 
 app.use(express.static(path.join(__dirname, '/views')));
 
-app.listen(port, '127.0.0.1');
-
-
-// router.get('/login', function(req, res, next) {
-//         res.render('./views/login');
-// });
+app.listen(port);
