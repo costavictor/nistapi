@@ -1,0 +1,1 @@
+const panels = ['CentOS', 'RedHat', 'Ubuntu', 'Debian'];
