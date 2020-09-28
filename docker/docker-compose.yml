@@ -5,10 +5,11 @@ services:
     nistapi_web:
         image: nginx:latest
         volumes:
-        - ./ssl_setup.sh:/docker-entrypoint.d/
+        - ./ssl_setup.sh:/docker-entrypoint.d
         - ./nistapi.conf:/etc/nginx/sites-enabled/nistapi.conf
         - ../webserver/:/usr/share/nginx/nistapi
         networks:
             - nistnet
         ports: 
             - 80:80
+        command: [nginx-debug, '-g', 'daemon off;']
