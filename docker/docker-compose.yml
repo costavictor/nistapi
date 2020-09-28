@@ -5,7 +5,7 @@ services:
     nistapi:
         image: nginx:latest
         volumes:
-        - ./ssl_setup.sh:/docker-entrypoint.d/setup.sh
+        - ./ssl_setup.sh:/docker-entrypoint.d/0-setup.sh
         - ./nistapi.conf:/etc/nginx/sites-enabled/nistapi.conf
         - ../webserver:/usr/share/nginx/nistapi
         networks:
