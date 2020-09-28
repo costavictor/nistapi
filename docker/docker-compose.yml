@@ -10,4 +10,5 @@ services:
         - ../webserver/:/usr/share/nginx/nistapi
         networks:
             - nistnet
-        expose: 80
+        ports: 
+            - 80:80
