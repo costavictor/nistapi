@@ -1,4 +1,3 @@
-apt-get update
-apt-get upgrade
+apt update
 
 echo "Done"
