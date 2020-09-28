@@ -1,0 +1,20 @@
+﻿/*******navbar********/
+.nav-item {
+    margin-left: 10%;
+    width: 25%;
+}
+
+nav{
+    height: 9vh;
+}
+
+.nav-wrapper{
+    padding: 0;
+}
+
+
+/******progress bar  ****/
+.breadcrumb-item{
+    width: 20%;
+    text-align: center;
+}

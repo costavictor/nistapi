@@ -1,0 +1,13 @@
+version: '3'
+networks:
+    nistnet:
+services:
+    web:
+        image: nginx:latest
+        volumes:
+        - ./ssl_setup.sh:/docker-entrypoint.d/
+        - ./nistapi.conf:/etc/nginx/sites-enabled/nistapi.conf
+        - ../webserver/:/usr/share/nginx/nistapi
+        networks:
+            - nistnet
+        expose: 80
