@@ -1,0 +1,1 @@
+const panels = ['MySQL', 'Postgre', 'Oracle-DB', 'Influx', 'SQL']

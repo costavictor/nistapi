@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <!-- import -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/lib/neumorphism.css" />
+    <link rel="stylesheet" href="../css/default/navbar.css" />
+    <link rel="stylesheet" href="../css/default/sidebar.css" />
+    <link rel="stylesheet" href="../css/default/loading.css" />
+    <link rel="stylesheet" href="../css/default/default.css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../imgs/faviconLogo.jpeg" type="image/jpeg" />
+
+    <!-- title -->
+    <title>Nist Vulnerabilidades Fortinet</title>
+</head>
+
+<body>
+    <form id="form1" class="hide" runat="server">
+        <nav class="nav-wrapper position-relative">
+            <ul class="nav nav-pills nav-fill flex-column flex-md-row">
+                <a class="nav-link mb-sm-3 mb-md-0" href="#">
+                    <img src="../imgs/logo.jpeg" width="100" height="40" alt="ITProtect" />
+                </a>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a class="btn btn-primary" disabled href="/" disabled><i class="fas fa-folder icon-options"
+                            title="Fortinet" data-toggle="tooltip" data-placement="right"></i></a>
+                </li>
+                <li>
+                    <a class="btn btn-primary" href="/linux"><i class="fab fa-linux icon-options" title="Linux"
+                            data-toggle="tooltip" data-placement="right"></i></a>
+                </li>
+                <li>
+                    <a class="btn btn-primary" href="/webserver"><i class="fas fa-server icon-options"
+                            title="Servidor Web" data-toggle="tooltip" data-placement="right"></i></a>
+                </li>
+                <li>
+                    <a class="btn btn-primary" href="/bancodedados"><i class="fas fa-database icon-options"
+                            title="Banco de Dados" data-toggle="tooltip" data-placement="right"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="search-div">
+                <div class="form-group">
+                    <label for="exampleInputIcon2">Pesquisar</label>
+                    <div class="input-group mb-4">
+                        <input class="form-control" id="searchInput" aria-label="Input group" type="text">
+                        <div class="input-group-append">
+                            <button class="search-btn">
+                                <span class="input-group-text"><span class="fas fa-search"></span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <fieldset class="border p-2">
+                <legend class="w-auto">Fortinet</legend>
+                <div class="accordion shadow-soft rounded" id="Accordion">
+                    <div class="card card-sm card-body bg-primary border-light mb-0">
+                        <a href="#panel-0" data-target="#panel-0" class="accordion-panel-header" data-toggle="collapse"
+                            role="button" aria-expanded="false" aria-controls="panel-0">
+                            <span class="h6 mb-0 font-weight-bold">FortiGate</span>
+                            <span class="icon"><span class="fas fa-plus"></span></span>
+                        </a>
+                        <!-- panel -->
+                        <div class="collapse panel-FortiGate" id="panel-0">
+
+                        </div>
+                    </div>
+                    <div class="card card-sm card-body bg-primary border-light mb-0">
+                        <a href="#panel-1" data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse"
+                            role="button" aria-expanded="false" aria-controls="panel-1">
+                            <span class="h6 mb-0 font-weight-bold">FortiClient</span>
+                            <span class="icon"><span class="fas fa-plus"></span></span>
+                        </a>
+                        <!-- panel -->
+                        <div class="collapse panel-FortiClient" id="panel-1">
+                        </div>
+                    </div>
+                    <div class="card card-sm card-body bg-primary border-light">
+                        <a href="#panel-2" data-target="#panel-2" class="accordion-panel-header" data-toggle="collapse"
+                            role="button" aria-expanded="false" aria-controls="panel-2">
+                            <span class="h6 mb-0 font-weight-bold">FortiAnalyzer</span>
+                            <span class="icon"><span class="fas fa-plus"></span></span>
+                        </a>
+                        <!-- panel -->
+                        <div class="collapse panel-FortiAnalyzer" id="panel-2">
+                        </div>
+                    </div>
+                    <div class="card card-sm card-body bg-primary border-light">
+                        <a href="#panel-3" data-target="#panel-3" class="accordion-panel-header" data-toggle="collapse"
+                            role="button" aria-expanded="false" aria-controls="panel-3">
+                            <span class="h6 mb-0 font-weight-bold">FortiManager</span>
+                            <span class="icon"><span class="fas fa-plus"></span></span>
+                        </a>
+                        <!-- panel -->
+                        <div class="collapse panel-FortiManager" id="panel-3">
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="/js/default/neumorphism.js" type="text/javascript"></script>
+    <script src="../js/default/display.js" type="text/javascript"></script>
+    <script src="../js/default/loading.js" type="text/javascript"></script>
+    <script src="../js/default/ajaxcomm.js" type="text/javascript"></script>
+    <script src="../js/default/format.js" type="text/javascript"></script>
+    <script src="../js/fortinet.js" type="text/javascript"></script>
+    <script src="../js/default/getnist.js" type="text/javascript"></script>
+</body>
+
+</html>

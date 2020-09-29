@@ -1,0 +1,1 @@
+const panels = ['FortiGate', 'FortiClient', 'FortiAnalyzer', 'FortiManager'];
