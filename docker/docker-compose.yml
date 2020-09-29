@@ -1,14 +1,27 @@
 version: '3'
 networks:
     nistnet:
+
 services:
-    nistapi:
-        image: nginx:latest
+    backend:
+        image: node:14.11.0-alpine
         volumes:
-        - ./ssl_setup.sh:/docker-entrypoint.d/0-setup.sh
-        - ./nistapi.conf:/etc/nginx/sites-enabled/nistapi.conf
-        - ../webserver:/usr/share/nginx/nistapi
+            - ../backend:/var/www/nistapi
+        networks:
+            - nistnet
+    frontend:
+        image: nginx:1.19.2-alpine
+        volumes:
+        - ./ssl_setup.sh:/docker-entrypoint.d/ssl_setup.sh
+        #- ./default.conf:/etc/nginx/sites-enabled/default.conf
+        - ../frontend/html:/usr/share/nginx/html
+        - ../frontend/css:/usr/share/nginx/html
+        - ../frontend/js:/usr/share/nginx/html
+        - ../frontend/imgs:/usr/share/nginx/html
+        environment:
+            - NGINX_HOST=localhost
+            - NGINX_PORT=80
         networks:
             - nistnet
         ports: 
-            - 8080:8080
+            - 80:8080

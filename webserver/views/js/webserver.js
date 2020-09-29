@@ -1,1 +1,0 @@
-const panels = ['Apache', 'Nginx', 'IIS', 'NodeJS'];
