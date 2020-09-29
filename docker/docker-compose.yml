@@ -14,7 +14,7 @@ services:
         image: nginx:1.19.2-alpine
         volumes:
             - ./ssl_setup.sh:/docker-entrypoint.d/ssl_setup.sh
-            - ./default.conf:/etc/nginx/sites-enabled/default.conf
+            - ./default.conf:/etc/nginx/conf.d
             - ../frontend/html:/usr/share/nginx/html
             - ../frontend/css:/data/css
             - ../frontend/js:/data/js

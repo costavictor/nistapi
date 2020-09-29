@@ -1,7 +1,7 @@
 server {
-    listen ${NGINX_PORT}
+    listen ${NGINX_PORT};
 
-    root /usr/share/nginx/html
+    root /usr/share/nginx/html;
 
     location / {
         try_files $uri $uri/ =404;
@@ -10,12 +10,12 @@ server {
     }
 
     location /imgs/ {
-        root /data
+        root /data;
     }
     location /css/ {
-        root /data
+        root /data;
     }
     location /js/ {
-        root /data
+        root /data;
     }
 }
