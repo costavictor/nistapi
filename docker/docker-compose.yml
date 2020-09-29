@@ -14,11 +14,11 @@ services:
         image: nginx:1.19.2-alpine
         volumes:
             - ./ssl_setup.sh:/docker-entrypoint.d/ssl_setup.sh
-            #- ./default.conf:/etc/nginx/sites-enabled/default.conf
+            - ./default.conf:/etc/nginx/sites-enabled/default
             - ../frontend/html:/usr/share/nginx/html
-            - ../frontend/css:/usr/share/nginx/html/css
-            - ../frontend/js:/usr/share/nginx/html/js
-            - ../frontend/imgs:/usr/share/nginx/html/imgs
+            - ../frontend/css:/data/css
+            - ../frontend/js:/data/js
+            - ../frontend/imgs:/data/imgs
         environment:
             - NGINX_HOST=localhost
             - NGINX_PORT=80
