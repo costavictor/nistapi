@@ -1,7 +1,7 @@
 function GetData(name, page) {
     return $.ajax({
         type: "POST",
-        url: "http://backend/nist/search",
+        url: "http://api/nist/search",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify({'name' : name, 'page': page}),
         async: true,

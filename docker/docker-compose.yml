@@ -19,9 +19,6 @@ services:
             - ../frontend/css:/data/css
             - ../frontend/js:/data/js
             - ../frontend/imgs:/data/imgs
-        environment:
-            - NGINX_HOST=localhost
-            - NGINX_PORT=80
         networks:
             - nistnet
         depends_on: 
