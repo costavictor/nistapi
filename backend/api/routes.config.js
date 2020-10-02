@@ -2,7 +2,7 @@
 
 const search = require('./controllers/search'),
       cors = require('cors'),
-      whitelist = [process.env.HOST_IP],
+      whitelist = ['http://'.concat(process.env.HOST_IP)],
       corsOptions = {
           origin: function(origin, callback){
               if (whitelist.indexOf(origin) !== -1){
