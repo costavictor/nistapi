@@ -1,6 +1,6 @@
-# Vulnerabilidades NIST
+# Vulnerabilidades NIST NVD
 
-Mostra as vulnerabilidades mais recentes baseadas na API do NIST
+Mostra as vulnerabilidades mais recentes baseadas na API do NIST NVD
 
 Menu lateral pesquisa as seguintes palavras chaves
 
