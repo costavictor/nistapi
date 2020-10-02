@@ -18,6 +18,6 @@ const search = require('./controllers/search'),
       };
 
 module.exports = function(app){
-    app.options('/nist/search', cors(Options));
+    app.options('/nist/search', cors(corsOptions));
     app.post('/nist/search', cors(corsOptions), search);
 }
