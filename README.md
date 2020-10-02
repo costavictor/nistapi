@@ -9,4 +9,4 @@ Menu lateral pesquisa as seguintes palavras chaves
 - ```Servidor Web``` -> Apache, Nginx, IIS, NodeJS
 - ```Banco de Dados``` -> MySQL, SQL, Oracle-DB Postgre, Influx
 
-Sendo possível procurar qualquer palavra chave na api do nist
+Sendo possível procurar qualquer palavra chave na api do nist na barra de pesquisa em todas as páginas
