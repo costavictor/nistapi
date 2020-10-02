@@ -9,6 +9,9 @@ services:
             - ../backend:/var/www/nistapi
         networks:
             - nistnet
+        environment: 
+            #Ip do host para adicionar ao whitelist do CORS da API
+            - HOST_IP=10.150.0.251
         command: /bin/sh -c "cd /var/www/nistapi && node app.js"
     frontend:
         image: nginx:1.19.2-alpine
