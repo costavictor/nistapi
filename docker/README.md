@@ -26,4 +26,4 @@ Volumes:
 Porta exposta 80:80
 
 # Chart 
-![alt text](./chart.png "docker-compose chart")
+![alt text](chart.png "docker-compose chart")
