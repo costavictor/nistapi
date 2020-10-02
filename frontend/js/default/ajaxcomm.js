@@ -3,6 +3,9 @@ function GetData(name, page) {
         type: "POST",
         url: "api/nist/search",
         contentType: "application/json; charset=utf-8",
+        xhrFields: {
+        withCredentials: true
+        },
         data: JSON.stringify({'name' : name, 'page': page}),
         async: true,
         success: DataSuccess,
