@@ -19,7 +19,7 @@ Page sendo a página (30 resultados por página)
 # JSON Response
 
 Dependendo da resposta da API do nist 3 tipos de json serão retornados:
-1. 
+
 ```json
 {
     'references': element.cve.references,
@@ -36,7 +36,7 @@ Dependendo da resposta da API do nist 3 tipos de json serão retornados:
         'scope': element.impact.baseMetricV3.cvssV3.scope,
     }
 ```
-2. 
+
 ```json
 {
     'references': element.cve.references,
@@ -54,7 +54,7 @@ Dependendo da resposta da API do nist 3 tipos de json serão retornados:
     }
 }
 ```
-3. 
+
 ```json
 {
     'references': element.cve.references,
