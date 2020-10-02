@@ -24,3 +24,6 @@ Volumes:
 - mapeamento das pastas dos arquivos html, css, js e imgs
 
 Porta exposta 80:80
+
+# Chart 
+![alt text](./chart.png "docker-compose chart")
