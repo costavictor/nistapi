@@ -1,2 +1,4 @@
-node_modules
+.gitignore
+
+backend/node_modules
 package-lock.json
